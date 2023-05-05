@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url("background.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.formContainer {
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+}
+
+.header {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.inputBox {
+    height: 40px;
+    width: 300px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.inputBox input {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.inputBox label {
+    position: absolute;
+    left: 5px;
+    top: 15px;
+    font-size: 22px;
+    color: white;
+    transition: 0.5s;
+}
+
+input:focus + label,
+input:valid + label {
+    top: -15px;
+}
+
+.inputBox ion-icon {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    font-size: 22px;
+    color: white;
+}
+
+.rememberBox {
+    display: flex;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.rememberBox p {
+    margin-left: 3px;
+}
+
+.rememberBox a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #1b1b9a;
+}
+
+.btn {
+    margin-bottom: 13px;
+}
+
+.btn button {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.register {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.register a {
+    text-decoration: none;
+    margin-left: 5px;
+    color: #2727bf;
+}
+
+@media screen and (max-width: 375px) {
+    .inputBox {
+        width: 250px;
+    }
+}
+
+@media  screen and (max-width:320px){
+    .inputBox {
+        width: 230px;
+    }
+}
